@@ -26,8 +26,12 @@ const App = () => {
       <section className='padding'>
       <SpecialOffer/>
       </section>
+      
       <section className='padding bg-pale-blue'>
       <CustomerReviews/>
+      </section>
+      <section className='padding bg-pale-blue'>
+      <Subscribe/>
       </section>
       <section className='padding bg-black
       padding-x padding-t pb-8'>

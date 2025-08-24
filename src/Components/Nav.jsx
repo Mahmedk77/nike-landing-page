@@ -1,8 +1,13 @@
 import {headerLogo} from '../assets/images'
 import {hamburger} from '../assets/icons'
 import { navLinks } from '../constants'
+import { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
+
+    const [ showNav, setShowNav ] = useState(false);
+
   return (
     <header className='padding-x py-8 z-10 w-full absolute'>
         <nav className='flex justify-between items-center max-container'>
@@ -26,8 +31,28 @@ const Nav = () => {
             </ul>
             <img src={hamburger}
                  alt="hamburger" width={25} height={25}
-                 className='lg:hidden block' />
+                 className='lg:hidden block' 
+                 onClick={() => setShowNav(prev => !prev)}/>
         </nav>
+        <div className={`${showNav ? "w-full" : "w-0"} absolute top-0 bottom-0 right-0 bg-white overflow-hidden transition-all duration-400 border-2 min-h-screen py-5`}>
+            <p onClick={() => setShowNav(false)} className='text-xl font-normal text-gray-400 p-2 my-2 text-end'>
+                <img src={hamburger} alt="" width={25} height={25}/>
+            </p>
+            {
+                navLinks.map((element)=>(
+                    <li key={element.label} className='border p-2 border-black list-none border-x-0'>
+                        <a 
+                            href={element.href}
+                            onClick={() => setShowNav(false)}
+                            className='font-montserrat
+                            leading-normal text-lg text-black font-normal'>
+                            {element.label} 
+                        </a>
+                    </li>
+                ))
+                }
+
+        </div>
     </header>
   )
 }

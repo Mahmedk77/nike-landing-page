@@ -21,7 +21,7 @@ const Hero = () => {
         text-coral-red">Our Summer Collection</p>
         <h1 className="mt-10 font-palanquin text-8xl font-bold max-sm:text-[72px]
          max-sm:leading-[82px]">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
+          <span className="xl:bg-white xl:whitespace-nowrap relative sm:z-10 pr-10">The New Arrival</span>
           <br />  
            <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
           </h1> 
