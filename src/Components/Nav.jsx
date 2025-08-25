@@ -8,7 +8,7 @@ const Nav = () => {
     const [ showNav, setShowNav ] = useState(false);
 
   return (
-    <header className='padding-x py-4 z-10 w-full sticky top-0 left-0 bg-white shadow'>
+        <header className='padding-x py-8 z-10 w-full absolute'>
         <nav className='flex justify-between items-center max-container'>
             <a href="/">
             <img src={headerLogo} alt="Logo" width={130} height={29}/>
@@ -33,7 +33,7 @@ const Nav = () => {
                  className='lg:hidden block' 
                  onClick={() => setShowNav(prev => !prev)}/>
         </nav>
-        <div className={`${showNav ? "w-full" : "w-0"} absolute top-0 bottom-0 right-0 bg-white overflow-hidden transition-all duration-400 border-2 min-h-screen py-5`}>
+        <div className={`${showNav ? "w-full" : "w-0"} absolute top-0 bottom-0 right-0 bg-white overflow-hidden transition-all duration-300 border-2 min-h-screen py-5`}>
             <p onClick={() => setShowNav(false)} className='text-xl font-normal text-gray-400 p-2 my-2 text-end'>
                 <img src={hamburger} alt="" width={25} height={25}/>
             </p>
