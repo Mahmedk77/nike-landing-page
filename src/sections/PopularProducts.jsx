@@ -11,7 +11,7 @@ const PopularProducts = () => {
         <h2 className="text-4xl font-palanquin font-bold">Our <span className="text-coral-red">Popular</span> Products</h2>
         <p className="lg:max-w-lg mt-2 font-montserrat text-slate-gray">
           Experince top-notch quality and style with our sought-
-          after selections. Discouver a world of comfort, design, and 
+          after selections. Discover a world of comfort, design, and 
           value.
         </p>
       </div>

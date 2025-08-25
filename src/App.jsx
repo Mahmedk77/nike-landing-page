@@ -26,7 +26,6 @@ const App = () => {
       <section className='padding'>
       <SpecialOffer/>
       </section>
-      
       <section className='padding bg-pale-blue'>
       <CustomerReviews/>
       </section>
