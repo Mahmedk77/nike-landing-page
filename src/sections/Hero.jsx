@@ -21,7 +21,7 @@ const Hero = () => {
         text-coral-red">Our Summer Collection</p>
         <h1 className="mt-10 font-palanquin text-8xl font-bold max-sm:text-[72px]
          max-sm:leading-[82px]">
-          <span className="xl:bg-white xl:whitespace-nowrap relative sm:z-10 pr-10">The New Arrival</span>
+          <span className="xl:bg-white xl:whitespace-nowrap relative z-1 lg:z-10 pr-10">The New Arrival</span>
           <br />  
            <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
           </h1> 
@@ -47,7 +47,7 @@ const Hero = () => {
       </div>
       <div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center border-2  ">
         <img src={bigShoeImg} alt="shoe image" width={610} height={502} 
-        className="object-contain relative z-10"/>
+        className="object-contain relative z-1 lg:z-10"/>
         {/* when we explicitly want a large img to be responsive without cropping we use object-contain */}
         <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
           {

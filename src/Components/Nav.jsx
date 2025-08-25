@@ -40,7 +40,7 @@ const Nav = () => {
             </p>
             {
                 navLinks.map((element)=>(
-                    <li key={element.label} className='border p-2 border-black list-none border-x-0'>
+                    <li key={element.label} className='border p-2 border-black list-none border-x-0 z-10'>
                         <a 
                             href={element.href}
                             onClick={() => setShowNav(false)}
