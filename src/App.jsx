@@ -4,6 +4,7 @@ import { CustomerReviews, Footer,
          Services, SpecialOffer, 
          Subscribe, SuperQuality, } from './sections'
 import Nav from './Components/Nav'
+import Slider from './Components/Slider'
          
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
       padding-x padding-t pb-8'>
       <Footer/>
       </section>
+      <Slider />
     </main>
   )
 }

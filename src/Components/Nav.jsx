@@ -2,14 +2,13 @@ import {headerLogo} from '../assets/images'
 import {hamburger} from '../assets/icons'
 import { navLinks } from '../constants'
 import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
 
 const Nav = () => {
 
     const [ showNav, setShowNav ] = useState(false);
 
   return (
-    <header className='padding-x py-8 z-10 w-full absolute'>
+    <header className='padding-x py-4 z-10 w-full sticky top-0 left-0 bg-white shadow'>
         <nav className='flex justify-between items-center max-container'>
             <a href="/">
             <img src={headerLogo} alt="Logo" width={130} height={29}/>
